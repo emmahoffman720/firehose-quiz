@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160314192641) do
 
   create_table "ideas", force: true do |t|
     t.string   "idea"
+    t.string   "whatisit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -3,6 +3,7 @@ class CreateIdeas < ActiveRecord::Migration
     create_table :ideas do |t|
 
       t.string :idea
+      t.string :whatisit
 
       t.timestamps
     end
