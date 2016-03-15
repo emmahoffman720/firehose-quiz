@@ -2,3 +2,48 @@
   clear:both;
 }
 
+.circle {
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-weight:bold;
+    /*font-style: italic;*/
+    position: relative;
+    border-radius: 100%;
+    background: #9DD9ED;
+    border: 1px solid #95A7AD;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #3E4B4F;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    transform:rotate(11deg);
+    -ms-transform:rotate(11deg); /* IE 9 */
+    -webkit-transform:rotate(348deg); /* Opera, Chrome, and Safari */
+}
+
+.slogan {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a {
+  color: #3E4B4F;
+  font-size: 25px;
+  border-bottom: 1px solid #3E4B4F
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+hr {
+  clear:both;
+}
