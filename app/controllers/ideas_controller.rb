@@ -8,7 +8,10 @@ class IdeasController < ApplicationController
   end
 
   def create
-    Idea.create(idea_params)
+    @idea = Idea.create(idea_params)
+    if @idea.invalid?
+      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+    end
     redirect_to root_path
   end
 
