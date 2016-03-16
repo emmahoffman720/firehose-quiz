@@ -3,10 +3,6 @@ class IdeasController < ApplicationController
     @idea = Idea.order("RANDOM()").first
   end
 
-  def new
-    @idea = Idea.new
-  end
-
   def create
     @idea = Idea.create(idea_params)
     if @idea.invalid?

@@ -21,7 +21,8 @@
       <% end %>
     </div>
     <div class = "col-xs-5 links">
-      <%= link_to 'Add Idea', new_idea_path %>
+      <!-- Button trigger modal -->
+      <%= link_to 'Add Idea', '#', data: {toggle: 'modal', target: '#myModal'} %>
       <%= link_to 'Layouts', layout_path %>
       <%= link_to 'About', '#' %>
     </div>
@@ -29,6 +30,31 @@
       This site was created to help you create yours
     </div>
   </header>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Add Your Idea</h4>
+        </div>
+        <%= simple_form_for Idea.new do |f| %>
+          <div class="modal-body">
+            <%= f.input :idea %>
+            <%= f.input :whatisit %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= f.submit 'Add', class: 'btn btn-danger' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
 
   <hr />
 
