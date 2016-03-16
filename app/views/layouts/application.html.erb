@@ -9,17 +9,19 @@
 <body>
   <header>
     <div class = "col-xs-4">
-      <div class="circle">
-        <br />
-          IDEAS
-        <br />
-          FOR THE
-        <br />
-          WEB
-      </div>
+      <%= link_to root_path, class: 'logo' do %>
+        <div class="circle">
+          <br />
+            IDEAS
+          <br />
+            FOR THE
+          <br />
+            WEB
+        </div>
+      <% end %>
     </div>
     <div class = "col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Add Idea', new_idea_path %>
       <%= link_to 'Layout', '#' %>
       <%= link_to 'About', '#' %>
     </div>
@@ -41,7 +43,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "Another idea", "#", class: 'next-idea' %>
+        <%= link_to "Another idea", root_path, class: 'next-idea' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Proudly hacked by <a href="https://github.com/emmahoffman720">Emma</a><br />

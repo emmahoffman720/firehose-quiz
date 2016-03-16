@@ -1,0 +1,7 @@
+<h1>Enter your own idea for a website</h1>
+<%= simple_form_for @idea do |f| %>
+  <%= f.input :idea %>
+  <%= f.input :whatisit %>
+  </ br>
+  <%= f.submit 'Add', class: 'btn btn-danger' %>
+<% end %>
