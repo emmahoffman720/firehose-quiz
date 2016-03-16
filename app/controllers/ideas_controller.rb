@@ -15,6 +15,11 @@ class IdeasController < ApplicationController
     redirect_to root_path
   end
 
+  def layout
+    
+  end
+
+
   private
 
   def idea_params
