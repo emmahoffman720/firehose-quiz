@@ -32,6 +32,7 @@
   padding-top: 35px;
   padding-bottom: 15px;
   font-size: 15px;
+  color: #B284C4
 }
 
 .links {
@@ -39,15 +40,16 @@
 }
 
 .links a {
-  color: #3E4B4F;
+  color: #B284C4;
   font-size: 25px;
   border-bottom: 1px solid #3E4B4F;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  text-decoration: none;
 }
 
 header {
-  border-top: 9px solid #222222;
+  border-top: 9px solid #96C484;
 }
 
 hr {
@@ -72,7 +74,7 @@ h2 span {
 }
 
 .next-idea {
-  color: #074357;
+  color: #3E4B4F;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
 }
