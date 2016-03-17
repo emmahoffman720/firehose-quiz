@@ -15,6 +15,9 @@ class IdeasController < ApplicationController
     
   end
 
+  def about
+    
+  end
 
   private
 
