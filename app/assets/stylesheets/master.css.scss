@@ -66,6 +66,11 @@ h2 {
   font-size: 24px;
 }
 
+h2 span {
+  color: #dddddd;
+  font-family: 'Lato', sans-serif;
+}
+
 .next-idea {
   color: #074357;
   font-family: 'Lato', sans-serif;
@@ -85,4 +90,18 @@ h2 {
 
 .layout {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; 
+}
+
+::selection {
+  background-color: #9DD9ED;
 }
